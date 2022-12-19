@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorting Visualizer</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="title">
+            <h1>SORTING VISUALIZER</h1>
+        </div>
+        <div class="content">
+            <div class="right">
+                <button id="generate">GENERATE ARRAY</button>
+                <div>
+                    <h3>SIZE OF ARRAY:</h3>
+                    <input id="arrSize" type="range" min="5" max="200" step="1" value="5">
+                </div>
+                <div>
+                    <h3>SPEED OF ARRAY:</h3>
+                    <input id="arrSpeed" type="range" min="80" max="300" stepDown="10" value="80">
+                </div>
+            </div>
+            <div class="left">
+                <button id="bubbleSort">BUBBLE</button>
+                <button id="selectionSort">SELECTION</button>
+                <button id="insertionSort">INSERTION</button>
+                <button id="mergeSort">MERGE</button>
+                <button id="quickSort">QUICK</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="bars" class="container"></div>
+
+    <script src="sorting.js"></script>
+    <script src="bubble.js"></script>
+    <script src="selection.js"></script>
+    <script src="insertion.js"></script>
+    <script src="merge.js"></script>
+    <script src="quick.js"></script>
+</body>
+</html>
